@@ -19,9 +19,10 @@
 2. ### Lambda and API Gateway
 3. ### Route53
 ## Standards
-1. ### [ASCII](Standards/ASCII.md)
-2. ### [JSON](Standards/JSON.md)
-3. ### [YAML](Standards/YAML.md)
+1. ### [American Standard Code for Information Interchange (ASCII)](Standards/ASCII.md)
+2. ### [JavaScript Object Notation (JSON)](Standards/JSON.md)
+3. ### [YAML Ain't Markup Language (YAML)](Standards/YAML.md)
+4. ### [HTML response status codes](Standards/HTMLresponse.md)
 ## Tools
 1. ### [git]
 2. ### [docker]
@@ -30,3 +31,4 @@
 1. ### Junos
 2. ### MPLS
 3. ### BGP
+4. ### [Simple Network Management Protocol (SNMP)](Networking/SNMP.md)
