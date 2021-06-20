@@ -42,7 +42,7 @@ z=x+yj
 ```
 Here, **j** is the imaginary unit.
 
-![Object](Polar.png)
+![Object](Polar.PNG)
 
 A polar coordinate (r, φ) is completely determined by the modulus **r** and the phase angle **φ**.
 
