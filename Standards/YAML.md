@@ -2,8 +2,8 @@
 - YAML is case-sensitive.
 - Uses indents for structure.
 - Uses spaces, not tabs.
-- YAML documents start with three dashes ---
-- Comments begin with a #
+- YAML documents start with three dashes ***---***
+- Comments begin with a **#**
 - Strings don't need quotes unless they include special characters
 - Structures:
     - Mappings
@@ -19,7 +19,7 @@ Example:
 name : Bob
 height : 6 foot
 ```
-YAML Sequences are lists or arrays of data, similar to JSON arrays. Sequence items start with a dash -
+YAML Sequences are lists or arrays of data, similar to JSON arrays. Sequence items start with a dash **-**
 
 Example:
 ```yaml
