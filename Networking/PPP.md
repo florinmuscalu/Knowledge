@@ -1,0 +1,6 @@
+- PPP is the Point to Point Protocol. 
+- It provides a standard method for transporting multi-protocol datagram over point-to-point links.
+- Is designed for simple links which transport packets between two peers.
+- Provides a common solution for easy connection of a wide variety of hosts, bridges and routers.
+- Multiplexes different network-layer protocols simultaneously over the same link.
+- Provides authentication protocol to enhance the network security.
