@@ -1,7 +1,15 @@
 ## Programming
 1. ### [Python](Programming/Python.md)
-2. ### [Algorithms](Programming/Algorithms.md)
-3. ### Data Structures
+2. ### [C++](Programming/C++.md)
+3. ### [Algorithms](Programming/Algorithms.md)
+4. ### [Data Structures](Programming/DataStructures.md)
+## Android Programming
+1. ### Java
+2. ### Android Studio
+3. ### Gradle
+4. ### Google Services
+## IOS programming
+1. ### Swift 
 ## Linux
 1. ### [CLI & Basic commands]
 2. ### [Bash]
