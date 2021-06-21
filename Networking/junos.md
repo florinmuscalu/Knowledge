@@ -1,0 +1,1 @@
+http://net.cmed.us/Home/juniper/junos-cheat-sheet
