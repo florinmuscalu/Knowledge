@@ -1,5 +1,5 @@
 # Menu
-- ## [Operators](#operators)
+- ## [Operators](#operators1)
 - ## [Data Types](#datatypes)
     - ### [Numerical data tupes](#numeric)
     - ### [Character data types](#character)
@@ -22,7 +22,7 @@
     - ### [do loops](#do)
 - ## [Functions](#functions)
 <br><br><br><br>
-- # <a name="operators"></a>**Operators**
+- # <a name="operators1"></a>**Operators**
 |Operator|	Description|
 |-------|--------------|
 |+  |	addition
