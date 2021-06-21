@@ -1,4 +1,8 @@
-- # **Operators**
+# Menu
+- ## [Operators](#operators)
+- ## [Data Types](#datatypes)
+<br><br><br><br>
+- # <a name="operators"></a>**Operators**
 |Operator|	Description|
 |-------|--------------|
 |+  |	addition
@@ -21,7 +25,7 @@
 | \|\| |	logical OR
 |!  |	logical NOT
 <br><br>
-- # **Data Types**
+- # <a name="datatypes"></a>**Data Types**
     - ## **Numerical data types**
     |Type Name|	Bytes|	Alias|	Range|
     |---------|------|-------|-------|
