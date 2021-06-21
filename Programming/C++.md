@@ -4,12 +4,12 @@
     - ### [Numerical data tupes](#numeric)
     - ### [Character data types](#character)
     - ### [Other data types](#other)
-    - ### [Arrays](#arrays)
-    - ### [Strings](#strings)
-    - ### [Structures](#structures)
-    - ### [Unions](#unions)
-    - ### [Enumerations](#enumerations)
-    - ### [Pointers](#pointers)
+    - ### [Arrays](#arrays1)
+    - ### [Strings](#strings1)
+    - ### [Structures](#structures1)
+    - ### [Unions](#unions1)
+    - ### [Enumerations](#enumerations1)
+    - ### [Pointers](#pointers1)
         - #### [The dereference operator](#dereference)
         - #### [Reference types](#reference)
 - ## [Decision Statements](#decisionstatements)
@@ -20,7 +20,7 @@
     - ### [for loops](#for)
     - ### [while loops](#while)
     - ### [do loops](#do)
-- ## [Functions](#functions)
+- ## [Functions](#functions1)
 <br><br><br><br>
 - # <a name="operators1"></a>**Operators**
 |Operator|	Description|
@@ -83,14 +83,14 @@
     bool|	1|	none|	true or false
     enum|	varies|	none|	dependant on the enclosed data types
     <br><br>
-    - ## <a name="arrays"></a>**Arrays**
+    - ## <a name="arrays1"></a>**Arrays**
     ```c++
     int arrayName[10];
     int arrayName[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int arrayName[10] = {1, 2, 3};
     ```
     <br><br>
-    - ## <a name="strings"></a>**Strings**
+    - ## <a name="strings1"></a>**Strings**
     ```c++
     char isAString[6] = { 'H', 'e', 'l', 'l', 'o', '\0'}; 
     char isNotAString[5] = { 'H', 'e', 'l', 'l', 'o'}; 
@@ -107,7 +107,7 @@
     std::string myNewString = "Less typing";
     ```
     <br><br>
-    - ## <a name="structures"></a>**Structures**
+    - ## <a name="structures1"></a>**Structures**
     ```c++
     struct coffeeBean 
     { 
@@ -124,7 +124,7 @@
     cout << "Coffee bean " + newBean.name + " is from " + newBean.country << endl;
     ```
     <br><br>
-    - ## <a name="unions"></a>**Unions**
+    - ## <a name="unions1"></a>**Unions**
     ```c++
     union numericUnion 
     { 
@@ -143,7 +143,7 @@
     0
     ```
     <br><br>
-    - ## <a name="enumerations"></a>**Enumerations**
+    - ## <a name="enumerations1"></a>**Enumerations**
     ```c++
     enum Day { Sunday = 1, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }; 
     Day payDay; 
@@ -151,7 +151,7 @@
     cout << payDay << endl;
     ```
     <br><br>
-    - ## <a name="pointers"></a>**Pointers**
+    - ## <a name="pointers1"></a>**Pointers**
     A pointer is simply a variable that holds the memory address of an object in C++.  To use pointers, you create a pointer variable.  As an example, if we want to, we can create a variable to point to our num variable's address in memory by using the following line of code:
     ```c++
     int num = 3;
@@ -343,7 +343,7 @@
     
     Third, notice the semicolon at the end of the loop.  This is required in the do loop and not in the while or for loop.
      <br><br>
-- # <a name="functions"></a>**Functions**
+- # <a name="functions1"></a>**Functions**
     In C++, function prototypes belong in header files. The function prototype only contains the function's signature with no implementation details. The implementation details along with the function signature, define the function. The function definition exists in the source code file (.cpp).
     ```c++
     int sum(int a, int b)
