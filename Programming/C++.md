@@ -17,9 +17,9 @@
     - ### [The **switch** statement](#switch)
     - ### [The conditional operator](#conditional)
 - ## [Repetition Statements](#repetitionstatements)
-    - ### [for loops](#for)
-    - ### [while loops](#while)
-    - ### [do loops](#do)
+    - ### [**for** loops](#for)
+    - ### [**while** loops](#while)
+    - ### [**do** loops](#do)
 - ## [Functions](#functions1)
 <br><br><br><br>
 - # <a name="operators1"></a>**Operators**

@@ -6,7 +6,7 @@
 - ## Android Programming
     - ### [Samples](Android/samples.md)
     - ### Java
-    - ### Android Studio
+    - ### [Android Studio](Android/studio.md)
     - ### Gradle
     - ### Google Services
 - ## IOS programming
