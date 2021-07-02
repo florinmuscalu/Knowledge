@@ -3,7 +3,7 @@
 <br><br><br><br>
 ## <a name="rename-package"></a>**Rename the package**
 - In your Project pane, click on the little gear icon.
-- Uncheck the **Compact Empty Middle Packages** option.
+- Uncheck the **Compact Empty Middle Packages** option.<br>
 ![Object](Compact-Empty-Middle-Packages.JPG)
 - Your package directory will now be broken up into individual directories
 - Individually select each directory you want to rename, and:
