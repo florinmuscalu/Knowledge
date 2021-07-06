@@ -3,6 +3,9 @@
 - ## [BGP Peers](#peers-1)
 - ## [BGP Message Types](#messages-1)
 - ## [Attributes](#attributes-1)
+    - ### [Next-Hop](#next-hop-1)
+    - ### [Local Preference](#local-preference-1)
+    - ### [AS Path](#as-path-1)
 <br><br><br><br>
 ## <a name="overview-1"></a>**Overview**
 - An **AS** is a set of routers that operate under the same administration.
@@ -52,3 +55,36 @@
     - **NOTIFICATION** message. Used to signal that something is wrong. When an error is detected, the BGP session is closed. 
     - **REFRESH** message. Normally a BGP speaker cannot be made to readvertise routes that have been already sent and ACKd (using TCP). The route refresh message supports *soft clearing* of BGP sessions by allowing a peer to readvertise routes that havr already been sent.
 ## <a name="attributes-1"></a>**Attributes**
+**BGP Attributes** are included in the update message and describe the BGP prefixes received from a peer. They are used to select the best path.
+|Name|Type|
+|----|---|
+|AS Path|Well-Known Mandatory|
+|Local Preference|Well-Known Discretionary|
+|MED|Optional Nontransitive|
+|Origin|Well-Known Mandatory|
+|Next-Hop|Well-Known Mandatory|
+|Community|Optional transitive|
+|Aggregator|Optional transitive|
+Atomic Aggregator|Optional transitive|
+|Cluster List|Optional Nontransitive|
+Originator ID| Optional Nontransitive|
+
+- Well-Known Mandatory - Must be supported by all BGP implementations and must be included in every BGP update.
+- Well-Known Discretionary - Must be supported by all BGP implementations but do not have to be included in every BGP update.
+- Optional Transitive - Not required to be supported by all BGP implementations but, if they are, they should be passed along, unchanged, to other BGP peers.
+- Optional Nontransitive - Not required to be supported by all BGP implementations. If one such attribute is not recognized, it's ignored and not passed to other peers.
+### <a name="next-hop-1"></a>**The Next-Hop Attribute**
+- It is the IP address of the peer advertising the prefix. 
+- Next-hop addresses must be reachable, in order for the receiving host to install the route in RIB-local.
+- It is used to verify connectivity of a remote BGP peer.
+- The next-hop value is tipically changed when the route is transmitted across EBGP links.
+- IBGP peers do not alter the next-hop value between themselves. This can be altered using policy controls.
+- Next-hop is always present for all BGP routes.
+- BGP routes for which the next-hop is not reachable are placed in the routing-table as hidden routes. You can view them using the CLI command **show route hidden**.
+### <a name="local-preference-1"></a>**The Local Preference Attribute**
+- Determines the prefered path **out** of the AS.
+- All BGP traffic in an AS flows toward the peer with the highest local preference value. This can be altered through BGP config or policy.
+- Values are only used within an individual AS. Nothing is sent across EBGP links.
+- The local preference attribute is a numeric value. Higher values indicate a better metric. Default value is 100.
+- You can set it both through configuration and policy. If both are used, the policy takes precedence.
+### <a name="as-path-1"></a>**The AS Path Attribute**
