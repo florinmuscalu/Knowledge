@@ -6,6 +6,10 @@
     - ### [Next-Hop](#next-hop-1)
     - ### [Local Preference](#local-preference-1)
     - ### [AS Path](#as-path-1)
+    - ### [Origin](#origin-1)
+    - ### [MED](#med-1)
+    - ### [Community](#community-1)
+- ## [Selecting the active BGP route](#select-active-1)
 <br><br><br><br>
 ## <a name="overview-1"></a>**Overview**
 - An **AS** is a set of routers that operate under the same administration.
@@ -88,3 +92,28 @@ Originator ID| Optional Nontransitive|
 - The local preference attribute is a numeric value. Higher values indicate a better metric. Default value is 100.
 - You can set it both through configuration and policy. If both are used, the policy takes precedence.
 ### <a name="as-path-1"></a>**The AS Path Attribute**
+- Used to indicate the path back to the route's source and to prevent routing loops.
+- Routes with the receiving router's AS number in the AS path are considered looped and are not advertised (dropped).
+- Each router on the edge of the AS ads its AS number to the fron of the path.
+- Using route policy, you can prepend your ASN information to the AS-path attribute. By prepending your ASN multiple times you can affect routing decisions (you make the route longer so less prefered).
+- AS-path is mandatory, always present.
+### <a name="origin-1"></a>**The Origin Attribute**
+- Added by the router that injected the route into BGP, and describes from where the route information was received.
+    - I - IGP (0). Example IGPs are OSPF, EIGRP, IS-IS, static, aggregate.
+    - E - EGP (1). EGP routes are form the original EGP (predecessor of BGP).
+    - ? - Incomplete (2). Routes that did not come from an IGP or from EGP.
+- Mandatory attribute, and transmitted across all BGP links. By default Junos OS assigns all routes injected into BGP an origin value of I. You can alter this behavior using routing policy.
+### <a name="med-1"></a>**The Multi-Exit Discriminator (MED) Attribute**
+- Used to help influence the prefered way back **into** an AS when multiple links exist between the same two ASs.
+- Can be altered through BGP configuration or policy.
+- Lower values are better.
+- The local AS sets the MED value differently on separate peers headed toward the same remote AS. The remote AS picks routes based on the lowest MED value it finds.
+- BGP routes do not require the MED attribute. If it is missing, BGP assumes it to be 0.
+- To configure a MED metric, you can either use the **metric-out** statement at the BGP protocol, group or neighbor level, or define and apply a routing policy that alters the MED value using **metric** as an action in the **then** statement.
+### <a name="community-1"></a>**The Community Attribute**
+- Used to tag certain routes so that they can easily be identified.
+- Defined under **[edit policy-options]** hierarchy.
+<br>![Object](community.jpg)<br>
+- A BGP community is an identifier that represents a group of destination prefixes that share a common property.
+- You can associate multiple communities with the same BGP route.
+## <a name="select-active-1"></a>**Selecting the active BGP route**
