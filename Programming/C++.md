@@ -1,4 +1,4 @@
-# Menu
+# C++
 - ## [Operators](#operators1)
 - ## [Data Types](#datatypes)
     - ### [Numerical data tupes](#numeric)

@@ -15,6 +15,8 @@
     - ### [CLI & Basic commands]
     - ### [Bash]
     - ### [QEMU & KVM](Linux/kvm.md)
+- ## Windows
+    - ### [Update](Windows/update.md)
 - ## AWS
     - ### CLI setup
     - ### Lambda and API Gateway
