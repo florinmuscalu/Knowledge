@@ -27,7 +27,7 @@
     - ### [YAML Ain't Markup Language (YAML)](Standards/YAML.md)
     - ### [HTML response status codes](Standards/HTMLresponse.md)
 - ## Tools
-    - ### [git]
+    - ### [git cheatsheet](Git/cheatsheet.md)
     - ### [docker](Tools/docker.md)
     - ### [kubernetes](Tools/kubernetes.md)
     - ### [ceph]
