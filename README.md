@@ -4,6 +4,8 @@
     - ### [Algorithms](Programming/Algorithms.md)
     - ### [Data Structures](Programming/DataStructures.md)
 - ## Android Programming
+    - ### Flutter
+        - #### [Install Flutter](Android/flutterinstall.md)
     - ### [Samples](Android/samples.md)
     - ### Java
     - ### [Android Studio](Android/studio.md)
