@@ -1,3 +1,10 @@
+# Import it
+```html
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+```
+---
 # Grid system:
 
 #### The numbers (1-12) represent a portion of the total width of any div.
@@ -53,3 +60,37 @@
 # Display property
 #### [Link](https://getbootstrap.com/docs/4.0/utilities/display/)
 ![display property](bootstrap-d.png)
+
+---
+# Spacing
+#### [Link](https://getbootstrap.com/docs/4.4/utilities/spacing/)
+#### Spacing utilities that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0 and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
+
+#### The classes are named using the format **{property}{sides}-{size}** for xs and **{property}{sides}-{breakpoint}-{size}** for sm, md, lg, and xl.
+
+#### Where property is one of:
+
+- m - for classes that set margin
+- p - for classes that set padding
+#### Where sides is one of:
+
+- t - for classes that set margin-top or padding-top
+- b - for classes that set margin-bottom or padding-bottom
+- l - for classes that set margin-left or padding-left
+- r - for classes that set margin-right or padding-right
+- x - for classes that set both *-left and *-right
+- y - for classes that set both *-top and *-bottom
+- blank - for classes that set a margin or padding on all 4 sides of the element
+#### Where size is one of:
+
+- 0 - for classes that eliminate the margin or padding by setting it to 0
+- 1 - (by default) for classes that set the margin or padding to $spacer * .25
+- 2 - (by default) for classes that set the margin or padding to $spacer * .5
+- 3 - (by default) for classes that set the margin or padding to $spacer
+- 4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+- 5 - (by default) for classes that set the margin or padding to $spacer * 3
+- auto - for classes that set the margin to auto
+---
+# Carousel
+#### [Link](https://getbootstrap.com/docs/4.0/components/carousel/)
+---
