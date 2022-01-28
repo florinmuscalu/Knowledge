@@ -34,7 +34,7 @@
 - ## Tools
     - ### [git cheatsheet](Git/cheatsheet.md)
     - ### [docker](Tools/docker.md)
-    - ### [kubernetes](Tools/kubernetes.md)
+    - ### [Kubernetes (K8s)](Tools/kubernetes.md)
     - ### [ceph]
     - ### [OpenStack](Tools/openstack.md)
 - ## Networking
