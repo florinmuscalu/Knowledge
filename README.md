@@ -6,6 +6,7 @@
     - ### Web programming
         - [Bootstrap](Programming/bootstrap.md)
         - [Open Cart customization](Programming/opencart.md)
+        - [Joomla customization](Programming/joomla.md)
 - ## Android Programming
     - ### Flutter
         - #### [Install Flutter](Android/flutterinstall.md)
